@@ -95,21 +95,342 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body > * {
+    max-width: 1600px;
+}
 
+/* ==========================================================================
+   Header section styles
+   ========================================================================== */
 
+header {
+    background-image: url("../img/header-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 500px;
+    border-top: solid 10px #d4213d;
+    background-attachment: fixed;
+}
 
+.header-container {
+    padding-top: 7%;
+    padding-left: 21%;
+}
 
+.title {
+    font-family: 'Gochi Hand', cursive;
+    font-weight: normal;
+    color: #fff;
+    font-size: 3em;
+    height: 2.5em;
+}
 
+.title p {
+    color: #d4213d;
+    display: inline-block;
+}
 
+.subtitle {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    width: 260px;
+}
 
+.platforms {
+    list-style-type: none;
+    padding-left: 0px;
+}
 
+.item {
+    height: 60px;
+    width: 60px;
+    background-color: #000;
+    background-size: cover;
+    opacity: 0.6;
+    border-radius: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-position: center center;
+    background-size: 30px 30px;
+}
 
+.apple {
+    background-image: url("../img/apple-icon.png");
+}
 
+.android {
+    background-image: url("../img/android-icon.png");
+}
 
+.windows {
+    background-image: url("../img/windows-icon.png");
+}
 
+.item:hover {
+    background-color: #d4213d;
+    opacity: 1;
+}
 
+a {
+    text-decoration: none;
+}
 
+/* ==========================================================================
+   Features section styles
+   ========================================================================== */
 
+.feature-list {
+    padding: 0;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.features {
+    padding-top: 55px;
+}
+
+.feature-block {
+    display: table-cell;
+    height: 200px;
+    width: auto;
+    text-align: center;
+    padding: 0 80px;
+}
+
+.feature-image {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-size: cover;
+}
+
+.rack {
+    background-image: url("../img/rack-icon.png");
+}
+
+.star {
+    background-image: url("../img/star-icon.png");
+}
+
+.globe {
+    background-image: url("../img/globe-icon.png");
+}
+
+.feature-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.feature-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+}
+
+/* ==========================================================================
+   Newsletter and video section styles
+   ========================================================================== */
+
+.newsletter-video {
+    display: inline-block;
+    height: 100%;
+    padding: 50px 80px;
+    background-color: #e3e3e3;
+}
+
+.newsletter-container {
+    box-sizing: border-box;
+    padding-right: 160px;
+    width: 59.6%;
+    float: left;
+}
+
+.newsletter-container h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.newsletter-container p {
+    color: #848484;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.newsletter-container input[type='email'] {
+    height: 55px;
+    border-radius: 15px 0 0 15px;
+    border: solid 1px #ccc;
+    width: 55%;
+    padding: 1px 25px 1px 15px;
+    outline: none;
+}
+
+.newsletter-container input[type='submit'] {
+    margin-left: -4px;
+    background-color: #d4213d;
+    border: none;
+    color: white;
+    font-size: 22px;
+    vertical-align: middle;
+    padding: 16px 45px 15px;
+    border-radius: 0 15px 15px 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.video-container {
+    width: 40%;
+    float: left;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Quote and carousel section styles
+   ========================================================================== */
+
+.quote-people {
+    text-align: center;
+}
+
+.quote {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #848484;
+    font-style: italic;
+    width: 70%;
+    display: inline-block;
+    margin: 50px 0 0 0;
+}
+
+.author {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.people-pictures {
+    width: 85%;
+    margin: auto;
+}
+
+.list-picture a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.list-picture a:hover:before {
+    background-color: #d4213d;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    content: '';
+    width: 90%;
+    opacity: 0.6;
+    height: 100%;
+}
+
+/* ==========================================================================
+   Social media section styles
+   ========================================================================== */
+
+.social {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.social h3 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.social p {
+    font-family: 'PT Sans', sans-serif;
+    color: #848484;
+}
+
+.socials-list {
+    padding: 10px 0 0 0;
+}
+
+.social-item {
+    height: 40px;
+    width: 40px;
+    background-color: #ccc;
+    background-size: cover;
+    opacity: 0.6;
+    border-radius: 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-position: center center;
+}
+
+.social-item:hover {
+    background-color: #d4213d;
+    opacity: 1;
+}
+
+.twitter {
+    background-image: url("../img/twitter-icon.png");
+    background-size: 20px 20px;
+}
+
+.facebook {
+    background-image: url("../img/facebook-icon.png");
+    background-size: 10px 20px;
+}
+
+.pinterest {
+    background-image: url("../img/pinterest-icon.png");
+    background-size: 20px 20px;
+}
+
+.google {
+    background-image: url("../img/google-icon.png");
+    background-size: 20px 20px;
+}
+
+.linkedin {
+    background-image: url("../img/linkedin-icon.png");
+    background-size: 17px 17px;
+}
+
+.youtube {
+    background-image: url("../img/youtube-icon.png");
+    background-size: 25px 25px;
+}
+
+/* ==========================================================================
+   Footer section styles
+   ========================================================================== */
+
+footer {
+    margin-top: 65px;
+    background-color: #e3e3e3;
+    text-align: center;
+    overflow: hidden;
+}
+
+.site-map {
+    padding: 55px 0;
+}
+
+.site-map-link {
+    display: inline-block;
+}
+
+.site-map-link a {
+    color: #848484;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 15px;
+}
 
 /* ==========================================================================
    Helper classes
