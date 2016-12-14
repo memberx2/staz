@@ -95,15 +95,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body > * {
-    max-width: 1600px;
-}
 
+.alt-text {
+    text-indent: -9998em;
+    display: block;
+}
 /* ==========================================================================
    Header section styles
    ========================================================================== */
 
-header {
+a {
+    text-decoration: none;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
     background-image: url("../img/header-background.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -114,18 +124,15 @@ header {
 
 .header-container {
     padding-top: 7%;
-    padding-left: 21%;
 }
 
 .title {
     font-family: 'Gochi Hand', cursive;
     font-weight: normal;
-    color: #fff;
     font-size: 3em;
-    height: 2.5em;
+    color: #fff;
 }
-
-.title p {
+.title-decor {
     color: #d4213d;
     display: inline-block;
 }
@@ -137,46 +144,41 @@ header {
     width: 260px;
 }
 
+
 .platforms {
     list-style-type: none;
     padding-left: 0px;
 }
-
-.item {
+.platform-item {
     height: 60px;
     width: 60px;
-    background-color: #000;
-    background-size: cover;
-    opacity: 0.6;
     border-radius: 100%;
+    overflow: hidden;
     display: inline-block;
     justify-content: space-between;
-    background-repeat: no-repeat;
     z-index: 1;
-    background-position: center center;
-    background-size: 30px 30px;
 }
-
-.apple {
+.platform-link {
+    height: 100%;
+    opacity: .6;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-position: 50% 50%;
+}
+.platform-link-apple {
     background-image: url("../img/apple-icon.png");
 }
-
-.android {
+.platform-link-android {
     background-image: url("../img/android-icon.png");
 }
-
-.windows {
+.platform-link-windows {
     background-image: url("../img/windows-icon.png");
 }
-
-.item:hover {
-    background-color: #d4213d;
+.platform-link:hover {
     opacity: 1;
+    background-color: #d4213d;
 }
 
-a {
-    text-decoration: none;
-}
 
 /* ==========================================================================
    Features section styles
@@ -196,7 +198,6 @@ a {
 .feature-block {
     display: table-cell;
     height: 200px;
-    width: auto;
     text-align: center;
     padding: 0 80px;
 }
@@ -239,9 +240,9 @@ a {
    ========================================================================== */
 
 .newsletter-video {
-    display: inline-block;
+    display: block;
     height: 100%;
-    padding: 50px 80px;
+    padding: 50px 0;
     background-color: #e3e3e3;
 }
 
