@@ -257,7 +257,7 @@ a {
 
 
 /* ==========================================================================
-   Newsletter and video section styles
+   Forms section styles
    ========================================================================== */
 
 .form-container {
@@ -308,8 +308,8 @@ a {
 .video-container {
     width: 40%;
     float: left;
-    border-radius: 5px;
     overflow: hidden;
+    border-radius: 7px;
 }
 
 
