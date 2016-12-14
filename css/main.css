@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,6 +17,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -34,6 +37,7 @@ html {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -46,6 +50,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -62,6 +67,7 @@ video {
     vertical-align: middle;
 }
 
+
 /*
  * Remove default fieldset styles.
  */
@@ -72,6 +78,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,6 +86,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -91,30 +99,42 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-body > * {
-    max-width: 1600px;
-}
 
 /* ==========================================================================
    Header section styles
    ========================================================================== */
 
-header {
-    background-image: url("../img/header-background.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+a {
+    text-decoration: none;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.alt-text {
+    text-indent: -9998em;
+    display: block;
+}
+
+.header {
     height: 500px;
     border-top: solid 10px #d4213d;
     background-attachment: fixed;
+    background-image: url("../img/header-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
 .header-container {
-    padding-top: 7%;
-    padding-left: 21%;
+    padding-top: 11%;
+    padding-left: 17%;
 }
 
 .title {
@@ -122,10 +142,9 @@ header {
     font-weight: normal;
     color: #fff;
     font-size: 3em;
-    height: 2.5em;
 }
 
-.title p {
+.title-decor {
     color: #d4213d;
     display: inline-block;
 }
@@ -142,41 +161,44 @@ header {
     padding-left: 0px;
 }
 
-.item {
+.platform-item {
     height: 60px;
     width: 60px;
-    background-color: #000;
-    background-size: cover;
-    opacity: 0.6;
     border-radius: 100%;
+    overflow: hidden;
     display: inline-block;
     justify-content: space-between;
-    background-repeat: no-repeat;
     z-index: 1;
-    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-size: 30px 30px;
 }
 
-.apple {
+.platform-link {
+    height: 100%;
+    opacity: .6;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-position: 50% 50%;
+}
+
+.platform-link-apple {
     background-image: url("../img/apple-icon.png");
 }
 
-.android {
+.platform-link-android {
     background-image: url("../img/android-icon.png");
 }
 
-.windows {
+.platform-link-windows {
     background-image: url("../img/windows-icon.png");
 }
 
-.item:hover {
-    background-color: #d4213d;
+.platform-link:hover {
     opacity: 1;
+    background-color: #d4213d;
 }
 
-a {
-    text-decoration: none;
-}
 
 /* ==========================================================================
    Features section styles
@@ -196,7 +218,6 @@ a {
 .feature-block {
     display: table-cell;
     height: 200px;
-    width: auto;
     text-align: center;
     padding: 0 80px;
 }
@@ -208,15 +229,15 @@ a {
     background-size: cover;
 }
 
-.rack {
+.feature-image-rack {
     background-image: url("../img/rack-icon.png");
 }
 
-.star {
+.feature-image-star {
     background-image: url("../img/star-icon.png");
 }
 
-.globe {
+.feature-image-globe {
     background-image: url("../img/globe-icon.png");
 }
 
@@ -234,14 +255,15 @@ a {
     color: gray;
 }
 
+
 /* ==========================================================================
    Newsletter and video section styles
    ========================================================================== */
 
-.newsletter-video {
-    display: inline-block;
+.form-container {
+    display: block;
     height: 100%;
-    padding: 50px 80px;
+    padding: 50px 0;
     background-color: #e3e3e3;
 }
 
@@ -252,12 +274,12 @@ a {
     float: left;
 }
 
-.newsletter-container h3 {
+.newsletter-container-title {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
 }
 
-.newsletter-container p {
+.newsletter-container-description {
     color: #848484;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -271,7 +293,7 @@ a {
     outline: none;
 }
 
-.newsletter-container input[type='submit'] {
+.newsletter-container button {
     margin-left: -4px;
     background-color: #d4213d;
     border: none;
@@ -289,6 +311,7 @@ a {
     border-radius: 5px;
     overflow: hidden;
 }
+
 
 /* ==========================================================================
    Quote and carousel section styles
@@ -336,6 +359,7 @@ a {
     height: 100%;
 }
 
+
 /* ==========================================================================
    Social media section styles
    ========================================================================== */
@@ -362,50 +386,59 @@ a {
 .social-item {
     height: 40px;
     width: 40px;
-    background-color: #ccc;
-    background-size: cover;
-    opacity: 0.6;
     border-radius: 100%;
+    overflow: hidden;
     display: inline-block;
-    background-repeat: no-repeat;
+    justify-content: space-between;
     z-index: 1;
-    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30px 30px;
 }
 
-.social-item:hover {
+.socials-link {
+    height: 100%;
+    opacity: .6;
+    background-repeat: no-repeat;
+    background-color: #d4d4d4;
+    background-position: 50% 50%;
+}
+
+.socials-link:hover {
     background-color: #d4213d;
     opacity: 1;
 }
 
-.twitter {
+.socials-link-twitter {
     background-image: url("../img/twitter-icon.png");
     background-size: 20px 20px;
 }
 
-.facebook {
+.socials-link-facebook {
     background-image: url("../img/facebook-icon.png");
     background-size: 10px 20px;
 }
 
-.pinterest {
+.socials-link-pinterest {
     background-image: url("../img/pinterest-icon.png");
     background-size: 20px 20px;
 }
 
-.google {
+.socials-link-google {
     background-image: url("../img/google-icon.png");
     background-size: 20px 20px;
 }
 
-.linkedin {
+.socials-link-linkedin {
     background-image: url("../img/linkedin-icon.png");
     background-size: 17px 17px;
 }
 
-.youtube {
+.socials-link-youtube {
     background-image: url("../img/youtube-icon.png");
     background-size: 25px 25px;
 }
+
 
 /* ==========================================================================
    Footer section styles
@@ -432,9 +465,11 @@ footer {
     padding: 0 15px;
 }
 
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -443,6 +478,7 @@ footer {
 .hidden {
     display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -460,6 +496,7 @@ footer {
     width: 1px;
 }
 
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
@@ -476,6 +513,7 @@ footer {
     width: auto;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -483,6 +521,7 @@ footer {
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -498,13 +537,16 @@ footer {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -517,11 +559,12 @@ footer {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -536,66 +579,55 @@ footer {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;

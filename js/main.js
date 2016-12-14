@@ -1,11 +1,13 @@
 $(document).ready(function () {
-    $(".people-pictures").slick({
+    $('.people-pictures').slick({
+        centerMode: true,
+        centerPadding: '50px',
         infinite: true,
-        slidesToShow: 21,
+        slidesToShow: 17,
         slidesToScroll: 1,
         rtl: true,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 1000
+        autoplaySpeed: 2000
     });
 });
