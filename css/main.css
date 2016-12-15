@@ -142,7 +142,7 @@ a {
     font-family: 'Gochi Hand', cursive;
     font-weight: normal;
     color: #fff;
-    font-size: 3em;
+    font-size: 50px;
 }
 
 .title-decor {
@@ -303,7 +303,7 @@ a {
 }
 
 .newsletter-container button {
-    margin-left: -4px;
+    margin-left: -5px;
     background-color: #d4213d;
     border: none;
     color: white;
@@ -315,11 +315,12 @@ a {
 }
 
 .video-container {
-    padding-top: 50px;
+    margin-top: 50px;
     width: 40%;
     float: left;
     overflow: hidden;
     border-radius: 7px;
+    position: relative;
 }
 
 
