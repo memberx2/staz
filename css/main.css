@@ -114,22 +114,23 @@ a {
 }
 
 .inner {
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .alt-text {
-    text-indent: -9998em;
     display: block;
+    text-indent: -9998em;
 }
 
 .header {
-    height: 500px;
-    border-top: solid 10px #d4213d;
     background-attachment: fixed;
     background-image: url("../img/header-background.png");
-    background-size: 100% auto;
     background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-top: solid 10px #d4213d;
+    height: 500px;
+    padding-top: 10px;
 }
 
 .header-container {
@@ -150,10 +151,11 @@ a {
 }
 
 .subtitle {
+    padding-top: 7.5px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-    width: 260px;
+    font-size: 20px;
+    width: 320px;
 }
 
 .platforms {
@@ -162,8 +164,9 @@ a {
 }
 
 .platform-item {
-    height: 60px;
-    width: 60px;
+    margin: 5px 3px 0 2px;
+    height: 45px;
+    width: 45px;
     border-radius: 100%;
     overflow: hidden;
     display: inline-block;
@@ -184,14 +187,17 @@ a {
 
 .platform-link-apple {
     background-image: url("../img/apple-icon.png");
+    background-size: 21px 26px;
 }
 
 .platform-link-android {
     background-image: url("../img/android-icon.png");
+    background-size: 23px 25px;
 }
 
 .platform-link-windows {
     background-image: url("../img/windows-icon.png");
+    background-size: 26px 25px;
 }
 
 .platform-link:hover {
@@ -212,19 +218,19 @@ a {
 }
 
 .features {
-    padding-top: 55px;
+    padding-top: 30px;
 }
 
 .feature-block {
     display: table-cell;
     height: 200px;
     text-align: center;
-    padding: 0 80px;
+    padding: 0 20px;
 }
 
 .feature-image {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     display: inline-block;
     background-size: cover;
 }
@@ -263,25 +269,28 @@ a {
 .form-container {
     display: block;
     height: 100%;
-    padding: 50px 0;
+    padding: 5px 0 50px;
     background-color: #e3e3e3;
 }
 
 .newsletter-container {
     box-sizing: border-box;
-    padding-right: 160px;
+    padding: 0 120px 0 45px;
     width: 59.6%;
     float: left;
+    margin: 0;
 }
 
 .newsletter-container-title {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
+    padding: 22px 0 22px 0;
 }
 
 .newsletter-container-description {
     color: #848484;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0 20px;
 }
 
 .newsletter-container input[type='email'] {
@@ -300,12 +309,13 @@ a {
     color: white;
     font-size: 22px;
     vertical-align: middle;
-    padding: 16px 45px 15px;
+    padding: 14px 45px 15px;
     border-radius: 0 15px 15px 0;
     font-family: 'PT Sans', sans-serif;
 }
 
 .video-container {
+    padding-top: 50px;
     width: 40%;
     float: left;
     overflow: hidden;
@@ -369,12 +379,12 @@ a {
     padding-top: 30px;
 }
 
-.social h3 {
+.socials-title {
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
 }
 
-.social p {
+.socials-subtitle {
     font-family: 'PT Sans', sans-serif;
     color: #848484;
 }
@@ -402,21 +412,28 @@ a {
     background-repeat: no-repeat;
     background-color: #d4d4d4;
     background-position: 50% 50%;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    overflow: hidden;
+    border-radius: 100%;
+    transform-style: preserve-3d;
 }
 
 .socials-link:hover {
     background-color: #d4213d;
     opacity: 1;
+    transform: rotateY(360deg);
+    border-radius: 100%;
 }
 
 .socials-link-twitter {
     background-image: url("../img/twitter-icon.png");
-    background-size: 20px 20px;
+    background-size: 17px 13px;
 }
 
 .socials-link-facebook {
     background-image: url("../img/facebook-icon.png");
-    background-size: 10px 20px;
+    background-size: 8px 16px;
 }
 
 .socials-link-pinterest {
@@ -426,17 +443,17 @@ a {
 
 .socials-link-google {
     background-image: url("../img/google-icon.png");
-    background-size: 20px 20px;
+    background-size: 19px 18px;
 }
 
 .socials-link-linkedin {
     background-image: url("../img/linkedin-icon.png");
-    background-size: 17px 17px;
+    background-size: 15px 15px;
 }
 
 .socials-link-youtube {
     background-image: url("../img/youtube-icon.png");
-    background-size: 25px 25px;
+    background-size: 18px 22px;
 }
 
 
