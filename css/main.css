@@ -262,7 +262,7 @@ a {
     font-size: 19px;
     font-weight: normal;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 
 .feature-description {
@@ -369,9 +369,8 @@ a {
 
 .author {
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    margin-bottom: 19px;
-    margin-top: 13px;
+    font-size: 16px;
+    margin: 13px 14px 19px 0;
 }
 
 .people-pictures {
@@ -421,8 +420,9 @@ a {
 .socials-subtitle {
     font-family: 'Roboto', sans-serif;
     color: #848484;
-    margin-top: 11px;
+    margin-top: 12px;
     font-size: 14px;
+    margin-left: 10px;
 }
 
 .socials-list {
@@ -440,6 +440,7 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 30px 30px;
+    margin: 0 2px;
 }
 
 .socials-link {
