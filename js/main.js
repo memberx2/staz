@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $('.people-pictures').slick({
         centerMode: true,
-        centerPadding: '50px',
+        centerPadding: '40px',
         infinite: true,
-        slidesToShow: 17,
+        slidesToShow: 19,
         slidesToScroll: 1,
         rtl: true,
         arrows: false,
