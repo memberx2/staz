@@ -151,7 +151,7 @@ a {
 }
 
 .subtitle {
-    padding-top: 7.5px;
+    padding: 10.1px 0 0 3px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -164,7 +164,7 @@ a {
 }
 
 .platform-item {
-    margin: 5px 3px 0 2px;
+    margin: 5px 7px 0 2px;
     height: 45px;
     width: 45px;
     border-radius: 100%;
@@ -187,17 +187,17 @@ a {
 
 .platform-link-apple {
     background-image: url("../img/apple-icon.png");
-    background-size: 21px 26px;
+    background-size: 17px 22px;
 }
 
 .platform-link-android {
     background-image: url("../img/android-icon.png");
-    background-size: 23px 25px;
+    background-size: 20px 25px;
 }
 
 .platform-link-windows {
     background-image: url("../img/windows-icon.png");
-    background-size: 26px 25px;
+    background-size: 23px 22px;
 }
 
 .platform-link:hover {
@@ -214,23 +214,28 @@ a {
     padding: 0;
     width: 100%;
     display: block;
+    margin-top: 17.5px;
+    margin-left: 59px;
 }
 
 .features {
-    padding-top: 37px;
+    padding-top: 18px;
+    margin-top: 16px;
+    padding-bottom: 18px;
 }
 
 .feature-block {
     display: inline-block;
-    width: 290px;
+    width: 280px;
     height: 200px;
     text-align: center;
-    padding: 0 50px;
+    padding: 0 15px;
+    margin: 0 36px 0 20px;
 }
 
 .feature-image {
-    height: 80px;
-    width: 80px;
+    height: 84px;
+    width: 84px;
     display: inline-block;
     background-size: cover;
 }
@@ -251,14 +256,16 @@ a {
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
     font-weight: normal;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .feature-description {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13.5px;
     color: gray;
+    margin-top: 0;
+    line-height: 21px;
 }
 
 
@@ -275,7 +282,7 @@ a {
 
 .newsletter-container {
     box-sizing: border-box;
-    padding: 0 120px 0 45px;
+    padding: 0 130px 0 103px;
     width: 59.6%;
     float: left;
     margin: 0;
@@ -283,44 +290,55 @@ a {
 
 .newsletter-container-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    padding: 22px 0 22px 0;
+    font-size: 19px;
+    padding: 41px 0 14px 0;
+    margin: 0;
 }
 
 .newsletter-container-description {
     color: #848484;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 0 20px;
+    font-size: 14px;
+    margin: 0;
+    line-height: 22px;
 }
 
 .newsletter-container input[type='email'] {
-    height: 55px;
-    border-radius: 15px 0 0 15px;
+    height: 42px;
+    border-radius: 10px 0 0 10px;
     border: solid 1px #ccc;
     width: 55%;
-    padding: 1px 25px 1px 15px;
+    padding: 2px 25px 1px 15px;
     outline: none;
 }
 
 .newsletter-container button {
-    margin-left: -5px;
+    margin-left: -52px;
     background-color: #d4213d;
     border: none;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     vertical-align: middle;
-    padding: 14px 45px 15px;
-    border-radius: 0 15px 15px 0;
+    padding-left: 0;
+    border-radius: 0 10px 10px 0;
     font-family: 'PT Sans', sans-serif;
+    height: 47px;
+    width: 120px;
 }
 
 .video-container {
-    margin-top: 50px;
-    width: 40%;
+    width: 35.5%;
     float: left;
     overflow: hidden;
     border-radius: 7px;
     position: relative;
+    margin-left: -33px;
+    margin-top: 46px;
+}
+
+.iframe-video {
+    height: 263px;
 }
 
 
@@ -334,21 +352,24 @@ a {
 
 .quote {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     color: #848484;
     font-style: italic;
-    width: 70%;
+    width: 65%;
     display: inline-block;
-    margin: 50px 0 0 0;
+    margin: 47px 0 0 0;
+    line-height: 24px;
+    letter-spacing: 0.5px;
 }
 
 .author {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 19px;
 }
 
 .people-pictures {
-    width: 85%;
+    width: 79%;
     margin: auto;
 }
 
@@ -370,6 +391,11 @@ a {
     height: 100%;
 }
 
+.slick-slide img {
+    height: 42px;
+    width: 44px;
+}
+
 
 /* ==========================================================================
    Social media section styles
@@ -377,26 +403,29 @@ a {
 
 .social {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .socials-title {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    margin: 29px 0 0 9px;
 }
 
 .socials-subtitle {
     font-family: 'PT Sans', sans-serif;
     color: #848484;
+    margin-top: 11px;
+    font-size: 14px;
 }
 
 .socials-list {
-    padding: 10px 0 0 0;
+    padding: 5px 0 0 0;
 }
 
 .social-item {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 100%;
     overflow: hidden;
     display: inline-block;
@@ -463,14 +492,15 @@ a {
    ========================================================================== */
 
 footer {
-    margin-top: 65px;
+    margin-top: 45px;
     background-color: #e3e3e3;
     text-align: center;
     overflow: hidden;
 }
 
 .site-map {
-    padding: 55px 0;
+    padding: 30px 0;
+    margin-left: 12px;
 }
 
 .site-map-link {
@@ -480,7 +510,8 @@ footer {
 .site-map-link a {
     color: #848484;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0 15px;
+    padding: 0 14px;
+    font-size: 13px;
 }
 
 
