@@ -134,15 +134,12 @@ a {
 }
 
 .header-container {
-    padding-top: 11%;
-    padding-left: 16.5%;
+    padding: 11% 0 0 16.5%;
 }
 
 .title {
-    font-family: 'Gochi Hand', cursive;
-    font-weight: normal;
+    font: normal 50px 'Gochi Hand', cursive;
     color: #fff;
-    font-size: 50px;
 }
 
 .title-decor {
@@ -157,7 +154,7 @@ a {
     font-size: 20px;
     width: 320px;
     line-height: 30px;
-    margin: 16px 0 12px 0;
+    margin: 16px 0 12px ;
 }
 
 .platforms {
@@ -173,8 +170,6 @@ a {
     border-radius: 100%;
     overflow: hidden;
     display: inline-block;
-    justify-content: space-between;
-    z-index: 1;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 30px 30px;
@@ -219,14 +214,12 @@ a {
     padding: 0;
     width: 100%;
     display: block;
-    margin-top: 17.5px;
-    margin-left: 59px;
+    margin: 17.5px 0 0 59px;
 }
 
 .features {
-    padding-top: 18px;
+    padding: 18px 0;
     margin-top: 16px;
-    padding-bottom: 18px;
 }
 
 .feature-block {
@@ -261,8 +254,7 @@ a {
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
     font-weight: normal;
-    margin-top: 15px;
-    margin-bottom: 13px;
+    margin: 15px 0 13px;
 }
 
 .feature-description {
@@ -297,7 +289,7 @@ a {
 .newsletter-container-title {
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
-    padding: 40px 0 14px 0;
+    padding: 40px 0 14px;
     margin: 0;
     letter-spacing: -0.2px;
 }
@@ -342,8 +334,7 @@ a {
     overflow: hidden;
     border-radius: 7px;
     position: relative;
-    margin-left: -29px;
-    margin-top: 44px;
+    margin: 44px 0 0 -29px;
 }
 
 .iframe-video {
@@ -366,7 +357,7 @@ a {
     font-style: italic;
     width: 64%;
     display: inline-block;
-    margin: 45px 0 0 0;
+    margin: 45px 0 0;
     line-height: 24px;
     letter-spacing: 0.3px;
 }
@@ -418,20 +409,19 @@ a {
 .socials-title {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    margin: 28px 0 0 0;
+    margin: 28px 0 0;
 }
 
 .socials-subtitle {
     font-family: 'Roboto', sans-serif;
     color: #848484;
-    margin-top: 12px;
+    margin: 12px 0 0 4px;
     font-size: 13.5px;
-    margin-left: 4px;
     letter-spacing: 0.1px;
 }
 
 .socials-list {
-    padding: 5px 0 0 0;
+    padding: 5px 0 0;
 }
 
 .social-item {
@@ -440,8 +430,6 @@ a {
     border-radius: 100%;
     overflow: hidden;
     display: inline-block;
-    justify-content: space-between;
-    z-index: 1;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 30px 30px;
@@ -503,7 +491,7 @@ a {
    Footer section styles
    ========================================================================== */
 
-footer {
+.footer {
     margin-top: 45px;
     background-color: #e3e3e3;
     text-align: center;
