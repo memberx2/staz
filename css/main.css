@@ -333,6 +333,7 @@ a {
     font-family: 'PT Sans', sans-serif;
     height: 47px;
     width: 117px;
+    outline: none;
 }
 
 .video-container {
