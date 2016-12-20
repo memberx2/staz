@@ -190,19 +190,19 @@ a {
 
 .platform-link-apple {
     background-image: url("../img/apple-icon.png");
-    background-size: 17px 22px;
+    background-size: 18px 23px;
     background-position: 50% 46%;
 }
 
 .platform-link-android {
     background-image: url("../img/android-icon.png");
-    background-size: 20px 25px;
+    background-size: 20px 23px;
 }
 
 .platform-link-windows {
     background-image: url("../img/windows-icon.png");
-    background-size: 23px 22px;
-    background-position: 43%;
+    background-size: 23px 21px;
+    background-position: 47% 50%;
 }
 
 .platform-link:hover {
